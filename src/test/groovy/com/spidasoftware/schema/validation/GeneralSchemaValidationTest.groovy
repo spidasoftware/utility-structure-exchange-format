@@ -77,16 +77,7 @@ class GeneralSchemaValidationTest extends GroovyTestCase {
 			log.info "Validation message measurable: "+it.toString()
 		}
 		assertTrue "test item should be valid against schema", report.isSuccess()
-	}  
-
-	void testThatMethodResponseIsValidSchema(){
-		def schemaNode = JsonLoader.fromPath("resources/v1/schema/general/method_response.schema")
-		report = schemaValidator.validateSchema(schemaNode)
-		report.each{
-			log.info "Validation message method reponse: "+it.toString()
-		}
-		assertTrue "this schema should be valid", report.isSuccess()
-	}    
+	}
 
 	void testThatOwnerIsValidSchema(){
 		def schemaNode = JsonLoader.fromPath("resources/v1/schema/general/owner.schema")
@@ -109,15 +100,6 @@ class GeneralSchemaValidationTest extends GroovyTestCase {
 		}
 		assertFalse("Should not validate", report.isSuccess())
 
-	}
-
-	void testThatServiceMethodIsValidSchema(){
-		def schemaNode = JsonLoader.fromPath("resources/v1/schema/general/service_method.schema")
-		report = schemaValidator.validateSchema(schemaNode)
-		report.each{
-			log.info "Validation message service method: "+it.toString()
-		}
-		assertTrue "this schema should be valid", report.isSuccess()
 	}
 
 }

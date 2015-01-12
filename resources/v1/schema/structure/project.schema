@@ -1,5 +1,5 @@
 {
-  "id": "#/spidacalc/calc/project.schema",
+  "id": "#/structure/project.schema",
   "type": "object",
   "required": [
     "schema",
@@ -18,7 +18,7 @@
     },
     "schema": {
       "type": "string",
-      "description": "Full URL of the calc schema. For version 2 should be resources/v1/schema/schema/spidacalc/calc/project.schema"
+      "description": "Full URL of the calc schema. For version 2 should be resources/v1/schema/schema/structure/project.schema"
     },
     "version": {
       "type": "string",
@@ -45,7 +45,7 @@
       "description": "Project's general location on the map."
     },
     "address": {
-      "$ref": "../../general/address.schema"
+      "$ref": "../general/address.schema"
     },
     "comments": {
       "type": "string",
@@ -60,7 +60,7 @@
       "type": "array",
       "description": "An optional array of Project forms.",
       "items": {
-        "$ref": "../../general/form.schema"
+        "$ref": "../general/form.schema"
       }
     },
     "leads": {
@@ -88,7 +88,7 @@
             "id": "locations",
             "description": "All locations in lead.",
             "items": {
-                "$ref":"../../spidacalc/calc/location.schema"
+                "$ref":"../structure/location.schema"
             }
           }
         }

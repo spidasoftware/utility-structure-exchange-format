@@ -16,54 +16,46 @@ class ValidatorTest extends TestCase {
 	}
 
 	void testOneOfEverythingObject() throws Exception {
-		def schema = "/v1/schema/spidacalc/calc/structure.schema"
-		def instance = new File("resources/v1/examples/spidacalc/designs/one_of_everything.json").text
+		def schema = "/v1/schema/structure/structure.schema"
+		def instance = new File("resources/v1/examples/designs/one_of_everything.json").text
 		def report = new Validator().validateAndReport(schema, instance)
 		assertTrue "the instance should be valid against a schema", report.isSuccess()
 
 		def exception = null
 		try {
-			new Validator().validate(schema, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(schema, instance)
+		} catch (Exception jse) {
 			exception = jse
 		}
 		assertNull("Should not have thrown a servlet exception", exception)
 	}
 
 	void testBadObject() throws Exception {
-		def schema = "/v1/schema/spidacalc/calc/structure.schema"
+		def schema = "/v1/schema/structure/structure.schema"
 		def instance = '{"id":"externalId", "distance":{"unit":"FOOT", "value":10}, "direction":0}'
 		def report = new Validator().validateAndReport(schema, instance)
 		assertFalse "the instance should be valid against a schema", report.isSuccess()
-
-		def exception = null
-		try {
-			new Validator().validate(schema, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
-			exception = jse
-		}
 	}
 
 	void testBadInput() throws Exception {
 		def badSchema = "/"
-		def schema = "/v1/schema/spidacalc/calc/structure.schema"
+		def schema = "/v1/schema/structure/structure.schema"
 		def instance = '{"id":"externalId", "distance":{"unit":"FOOT", "value":10}, "direction":0}'
 		def exception = null
 		try {
-			new Validator().validate(schema, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(badSchema, instance)
+		} catch (Exception jse) {
 			exception = jse
 		}
-		assertNotNull("Should have thrown a servlet exception", exception)
+		assertNotNull("Should have thrown an exception", exception)
 
 		def badInstance = "{{";
-		exception = null
 		try {
-			new Validator().validate(schema, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(schema, badInstance)
+		} catch (Exception jse) {
 			exception = jse
 		}
-		assertNotNull("Should have thrown a servlet exception", exception)
+		assertNotNull("Should have thrown an exception", exception)
 	}
 
 	void testFromText() throws Exception {
@@ -82,6 +74,8 @@ class ValidatorTest extends TestCase {
   }
 }
 '''
+		def file = new File("build/test.json")
+		file.text = schemaText
 		def instance = '{"properties":{"externalId":"abc123"}}'
 		def report = new Validator().validateAndReportFromText(schemaText, instance)
 		report.each{println it}
@@ -89,38 +83,38 @@ class ValidatorTest extends TestCase {
 
 		def exception = null
 		try {
-			new Validator().validateFromText(schemaText, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(file, instance)
+		} catch (Exception jse) {
 			exception = jse
 		}
 		assertNull("Should not have thrown a servlet exception", exception)
 	}
 
 	void testFromFile() {
-		def schemaFile = new File("resources/v1/schema/spidacalc/calc/structure.schema")
-		def instance = new File("resources/v1/examples/spidacalc/designs/one_of_everything.json").text
+		def schemaFile = new File("resources/v1/schema/structure/structure.schema")
+		def instance = new File("resources/v1/examples/designs/one_of_everything.json").text
 		def report = new Validator().validateAndReport(schemaFile, instance)
 		assertTrue "the instance should be valid against a schema", report.isSuccess()
 
 		def exception = null
 		try {
-			new Validator().validate(schemaFile, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(schemaFile, instance)
+		} catch (Exception jse) {
 			exception = jse
 		}
 		assertNull("Should not have thrown a servlet exception", exception)
 	}
 
 	void testFromURL() {
-		def schemaURL = this.getClass().getResource("/v1/schema/spidacalc/calc/structure.schema")
-		def instance = new File("resources/v1/examples/spidacalc/designs/one_of_everything.json").text
+		def schemaURL = this.getClass().getResource("/v1/schema/structure/structure.schema")
+		def instance = new File("resources/v1/examples/designs/one_of_everything.json").text
 		def report = new Validator().validateAndReport(schemaURL, instance)
 		assertTrue "the instance should be valid against a schema", report.isSuccess()
 
 		def exception = null
 		try {
-			new Validator().validate(schemaURL, instance)
-		} catch (com.spidasoftware.schema.server.JSONServletException jse) {
+			new Validator().validateAndReport(schemaURL, instance)
+		} catch (Exception jse) {
 			exception = jse
 		}
 		assertNull("Should not have thrown a servlet exception", exception)

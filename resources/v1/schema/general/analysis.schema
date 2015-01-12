@@ -1,0 +1,34 @@
+{
+  "id": "#/general/analysis.schema",
+  "description": "A general analysis result",
+  "type": "object",
+  "properties": {
+    "actual": {
+      "type": "number"
+    },
+    "allowable": {
+      "type": "number"
+    },
+    "analysisDate": {
+      "description":"The long value of the time when the analysis was performed.",
+      "$ref": "../general/long_date.schema"
+    },
+    "component": {
+      "type": "string"
+    },
+    "loadInfo": {
+      "description":"General description of the analysis loading that generated this result",
+      "type": "string"
+    },
+    "passes": {
+      "type": "boolean"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "designType": {
+      "type":"string"
+    }
+  },
+  "additionalProperties": false
+}

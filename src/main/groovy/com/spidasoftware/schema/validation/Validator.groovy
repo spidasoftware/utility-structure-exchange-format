@@ -115,56 +115,5 @@ class Validator {
 		return report;
 	}
 
-	/**
-	 *
-	 * @param schemaPath resource URL to the schema. eg, "/spidacalc/calc/project.schema"
-	 * @param json string representation of json to be validated.
-	 * @throws JSONServletException Throws an exception if validation failed. This exception will include a more detailed report
-	 */
-	public void validate(String schemaPath, String json) throws JSONServletException{
-		ProcessingReport report = validateAndReport(schemaPath, json)
-		handleReport(report)
-	}
-
-	/**
-	 *
-	 * @param File object containing a schema.
-	 * @param json string representation of json to be validated.
-	 * @return The fge schema-validator report
-	 */
-	public void validate(File schemaFile, String json) throws JSONServletException{
-		ProcessingReport report = validateAndReport(schemaFile, json)
-		handleReport(report)
-	}
-
-	/**
-	 *
-	 * @param URL to the schema. eg, "http://json-schema.org/draft-04/schema#"
-	 * @param json string representation of json to be validated.
-	 * @return The fge schema-validator report
-	 */
-	public void validate(URL schemaURL, String json) throws JSONServletException{
-		ProcessingReport report = validateAndReport(schemaURL, json)
-		handleReport(report)
-	}
-
-	/**
-	 *
-	 * @param A schema in plain text.
-	 * @param json string representation of json to be validated.
-	 * @return The fge schema-validator report
-	 */
-	public void validateFromText(String schema, String json) throws JSONServletException{
-		ProcessingReport report = validateAndReportFromText(schema, json)
-		handleReport(report)
-	}
-
-	private void handleReport(ProcessingReport report) throws JSONServletException {
-		if (report == null) {
-			throw new JSONServletException(JSONServletException.INTERNAL_ERROR, "An internal error occurred when validating JSON");
-		}
-		if (!report.isSuccess()) {
-			throw new JSONServletException(JSONServletException.INVALID_PARAMETERS, report.toString());
-		}
-	}
+	
 }

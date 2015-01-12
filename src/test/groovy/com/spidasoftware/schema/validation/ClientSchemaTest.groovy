@@ -19,8 +19,8 @@ class ClientSchemaTest extends GroovyTestCase {
 	void testClientPoleObject(){
  		final LoadingConfiguration cfg = LoadingConfiguration.newBuilder().setNamespace(new File("resources").toURI().toString()).freeze();
     	final JsonSchemaFactory factory = JsonSchemaFactory.newBuilder().setLoadingConfiguration(cfg).freeze();
-		def schema = factory.getJsonSchema("v1/schema/spidacalc/client/pole.schema")
-		report = schema.validate(JsonLoader.fromString(new File("resources/v1/examples/spidacalc/client/client_pole_example.json").text))
+		def schema = factory.getJsonSchema("v1/schema/client/pole.schema")
+		report = schema.validate(JsonLoader.fromString(new File("resources/v1/examples/client/client_pole_example.json").text))
 		report.each{ log.info "validation report "+it.toString() }
 		assertTrue "the instance should be valid against a schema", report.isSuccess()		
 	}

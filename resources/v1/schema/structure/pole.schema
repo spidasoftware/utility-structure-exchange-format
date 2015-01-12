@@ -1,5 +1,5 @@
 {
-  "id": "#/spidacalc/calc/pole.schema",
+  "id": "#/structure/pole.schema",
   "description": "The properties for a pole in a structure.",
   "type": "object",
   "required": [
@@ -17,19 +17,19 @@
     },
     "glc": {
       "description": "Ground line circumference of pole. If omitted the default NESC embedment will be used.",
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "agl": {
       "description": "Measurable height above ground line of pole. If omitted the default NESC embedment will be used.",
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "environment": {
       "description": "Environment of the pole - STREET, RAILROAD, etc",
-      "$ref": "../../spidacalc/calc/enums/environment.schema"
+      "$ref": "../structure/enums/environment.schema"
     },
     "temperature": {
       "description": "Temperature of the day when the data was collected.",
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "stressRatio": {
       "description": "Defaults to 1. Any additional strength reduction in this specific pole beyond that specified by load cases.",
@@ -37,11 +37,11 @@
     },
     "clientItem": {
       "description": "The client pole used to specify material properties.",
-      "$ref": "../../spidacalc/calc/client_references/pole.schema"
+      "$ref": "../structure/client_references/pole.schema"
     },
     "owner": {
       "description": "Company who owns the pole.",
-      "$ref": "../../general/owner.schema"
+      "$ref": "../general/owner.schema"
     }
   },
   "additionalProperties": false

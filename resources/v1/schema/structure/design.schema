@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "id": "#/spidacalc/calc/design.schema", 
+    "id": "#/structure/design.schema",
     "additionalProperties": false, 
     "properties": {
         "id": {
@@ -24,7 +24,7 @@
                     "results": {
                         "description": "Result summaries for all components.", 
                         "items": {
-                            "$ref": "../../spidamin/asset/standard_details/analysis_asset.schema"
+                            "$ref": "../general/analysis.schema"
                         }, 
                         "type": "array"
                     }
@@ -37,14 +37,14 @@
             "type": "array"
         }, 
         "framingPlan": {
-            "$ref": "../../spidacalc/client/framing_plan.schema"
+            "$ref": "../client/framing_plan.schema"
         }, 
         "geographicCoordinate": {
-            "$ref": "../../general/geometry.schema"
+            "$ref": "../general/geometry.schema"
         }, 
 
         "structure": {
-            "$ref": "../../spidacalc/calc/structure.schema"
+            "$ref": "../structure/structure.schema"
         }
     }
     

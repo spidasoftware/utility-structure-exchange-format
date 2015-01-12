@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "id": "#/spidacalc/calc/location.schema", 
+    "id": "#/structure/location.schema",
     "description": "A location is single physical location that has a pole", 
     "additionalProperties": false, 
     "properties": {
@@ -13,7 +13,7 @@
             "type": "string"
         },
         "address": {
-            "$ref": "../../general/address.schema"
+            "$ref": "../general/address.schema"
         }, 
         "comments": {
             "description": "Technician comments about location.", 
@@ -23,19 +23,19 @@
             "description": "All pole structural designs for location", 
             "id": "designs", 
             "items": {
-                "$ref": "../../spidacalc/calc/design.schema"
+                "$ref": "../structure/design.schema"
             }, 
             "type": "array"
         },
         "forms": {
             "description": "An optional array of location forms for this location", 
             "items": {
-                "$ref": "../../general/form.schema"
+                "$ref": "../general/form.schema"
             }, 
             "type": "array"
         }, 
         "geographicCoordinate": {
-            "$ref": "../../general/geometry.schema"
+            "$ref": "../general/geometry.schema"
         }, 
         "technician": {
             "description": "Name of technician that did work at this location.", 

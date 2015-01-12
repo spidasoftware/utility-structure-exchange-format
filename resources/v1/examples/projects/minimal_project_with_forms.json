@@ -1,7 +1,7 @@
 {
   "clientFile": "Demo.client",
   "date": "2013-10-30",
-  "schema": "/v1/schema/spidacalc/project.schema",
+  "schema": "/v1/schema/project.schema",
   "clientFileVersion": "b6f0f10b2c459ee17a4cd027980303f7",
   "forms": [  {
     "title": "Test Project Form",

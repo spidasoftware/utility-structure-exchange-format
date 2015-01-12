@@ -1,5 +1,5 @@
 {
-  "id": "#/spidacalc/framing_plan.schema",
+  "id": "#/framing_plan.schema",
   "description": "List of end points and code units describing a framing plan.",
   "type": "object",
   "properties": {
@@ -21,10 +21,10 @@
         ],
         "properties": {
           "direction": {
-            "$ref": "../../general/bearing.schema"
+            "$ref": "../general/bearing.schema"
           },
           "distance": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "framingWireItems": {
             "type": "array",
@@ -44,14 +44,14 @@
                   "description": "Code to use to look up this wire's properties."
                 },
                 "owner": {
-                  "$ref": "../../general/owner.schema"
+                  "$ref": "../general/owner.schema"
                 },
                 "tensionGroupOverride": {
                   "type": "string",
                   "description": "Force the wire to use a different tension group than the default."
                 },
                 "usageGroup": {
-                  "$ref": "../../spidacalc/usage_group.schema"
+                  "$ref": "../usage_group.schema"
                 }
               },
               "additionalProperties": false

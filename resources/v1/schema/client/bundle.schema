@@ -1,6 +1,6 @@
 {
   "description": "A bundle of communication wires with a messenger.",
-  "id": "#/spidacalc/client/bundle.schema",
+  "id": "#/client/bundle.schema",
   "type": "object",
   "required": [
     "numberOfConductors",
@@ -25,17 +25,17 @@
       "type": "integer"
     },
     "messenger": {
-      "$ref": "../../spidacalc/client/wire_placement.schema"
+      "$ref": "../client/wire_placement.schema"
     },
     "cables": {
       "type": "array",
       "description": "The non-load-bearing communication cables.",
       "items": {
-        "$ref": "../../spidacalc/client/wire_placement.schema"
+        "$ref": "../client/wire_placement.schema"
       }
     },
     "calculation": {
-      "$ref": "../../spidacalc/client/calculation.schema"
+      "$ref": "../client/calculation.schema"
     },
     "conductorStrands": {
       "type": "integer"
@@ -44,29 +44,29 @@
       "type": "integer"
     },
     "crossArea": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "description": {
       "type": "string"
     },
     "diameter": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "expansionCoefficient": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "modulus": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "size": {
       "type": "string"
     },
     "strength": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "tensionGroups": {
       "items": {
-        "$ref": "../../spidacalc/client/tension_group.schema"
+        "$ref": "../client/tension_group.schema"
       },
       "type": "array"
     },
@@ -77,7 +77,7 @@
       "type": "array"
     },
     "weight": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     }
   },
   "additionalProperties": false

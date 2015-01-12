@@ -1,5 +1,5 @@
 {
-  "id": "#/spidacalc/calc/structure.schema",
+  "id": "#/structure/structure.schema",
   "description": "Structural Description of a calc Design",
   "type": "object",
   "required": [
@@ -8,21 +8,21 @@
   "additionalProperties": false,
   "properties": {
     "pole": {
-      "$ref": "../../spidacalc/calc/pole.schema",
+      "$ref": "../structure/pole.schema",
       "description": "The main pole being analyzed."
     },
     "anchors": {
       "description": "List of all anchors in this structure.",
       "type": "array",
       "items": {
-        "$ref":"../../spidacalc/calc/anchor.schema"
+        "$ref":"../structure/anchor.schema"
       }
     },
     "wireEndPoints": {
       "description": "List of all wire end points in the structure. Wire end points are the poles/buildings at the other end of your wires.",
       "type": "array",
       "items": {
-        "$ref":"../../spidacalc/calc/wire_end_point.schema"
+        "$ref":"../structure/wire_end_point.schema"
       }
     },
     "spanPoints": {
@@ -48,11 +48,11 @@
             "description": "Optional external ID."
           },
           "distance": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Distance from pole."
           },
           "environment": {
-            "$ref": "../../spidacalc/calc/enums/environment.schema",
+            "$ref": "../structure/enums/environment.schema",
             "description": "Type of environment the point is in -- STREET, RAILROAD, etc."
           },
           "heights": {
@@ -71,7 +71,7 @@
                   "type": "string"
                 },
                 "height": {
-                  "$ref": "../../general/measurable.schema"
+                  "$ref": "../general/measurable.schema"
                 }
               }
             }
@@ -103,11 +103,11 @@
             "description": "An optional id for mapping to external systems. Calc does not use this ID, but does preserve it."
           },  
           "distance": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Distance from pole."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema",
+            "$ref": "../general/bearing.schema",
             "description": "Bearing from pole."
           },
           "note": {
@@ -115,7 +115,7 @@
             "description": "Actual note taken."
           },
           "height": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height above ground that the note refers to."
           }
         }
@@ -154,55 +154,55 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema",
+            "$ref": "../general/owner.schema",
             "description": "The company who is applying this load"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height above ground on pole to attach load."
           },
           "elevation": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Additional translation on load."
           },
           "rotation": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Additional rotation on load"
           },
           "x": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "X (east)position of load"
           },
           "y": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Y (North) Position of load"
           },
           "z": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Z (Up) Position of load"
           },
           "fx": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "X component of force"
           },
           "fy": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Y component of force"
           },
           "fz": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "z component of force"
           },
           "mx": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "x component of moment"
           },
           "my": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "y component of moment"
           },
           "mz": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "z component of moment"
           }
         }
@@ -230,47 +230,47 @@
             "description": "Optional external id"
           },
           "damageType": {
-            "$ref": "../../spidacalc/calc/enums/damage_type.schema",
+            "$ref": "../structure/enums/damage_type.schema",
             "description": "Type/Shape of damage on pole."
           },
           "attachHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height above ground line of the top of the damage."
           },
           "damageHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height of the damage itself."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema",
+            "$ref": "../general/bearing.schema",
             "description": "Bearing around pole of damage"
           },
           "arc": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "width": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "depth": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "circumference": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "nestDepth": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "shellThickness": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "neckDepth": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "neckDiameter": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "neckOffset": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           }
         }
       }
@@ -299,11 +299,11 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema",
+            "$ref": "../general/owner.schema",
             "description": "Company who owns the wire"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height at the which the wire is attached to the pole."
           },
           "usageGroup": {
@@ -314,7 +314,7 @@
             "description": "Which client-wire-defined tension group the wire is in."
           },
           "midspanHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Height of the midspan, if collected."
           },
           "tensionAdjustment": {
@@ -322,7 +322,7 @@
             "description": "Additional wire-specific tension adjustment in addition to load case tension multipliers."
           },
           "clientItem": {
-            "$ref": "../../spidacalc/calc/client_references/wire.schema",
+            "$ref": "../structure/client_references/wire.schema",
             "description": "The engineering properties of this wire."
           }
         }
@@ -352,19 +352,19 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "midspanHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "height": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "clientItem": {
-            "$ref": "../../spidacalc/calc/client_references/wire.schema"
+            "$ref": "../structure/client_references/wire.schema"
           }
         }
       }
@@ -392,21 +392,21 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "braceHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "DEPRECATED in Calc 5.1. Use sidewalkBraces instead. If this is a sidewalk guy, attach height of sidewalk brace."
           },
           "braceLength": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "DEPRECATED in Calc 5.1. Use sidewalkBraces instead. If this is a sidewalk guy, length of sidewalk brace."
           },
           "clientItem": {
-            "$ref": "../../spidacalc/calc/client_references/wire.schema"
+            "$ref": "../structure/client_references/wire.schema"
           }
         }
       }
@@ -437,17 +437,17 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "length": {
             "description": "Length of the brace from the pole.",
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "direction": {
-            "$ref": "../../general/bearing.schema"
+            "$ref": "../general/bearing.schema"
           },
           "clientItem": {
             "type": "string",
@@ -489,20 +489,20 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "bottomHeight": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Measured height above ground of the bottom of the equipment."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema"
+            "$ref": "../general/bearing.schema"
           },
           "clientItem": {
-            "$ref": "../../spidacalc/calc/client_references/equipment.schema"
+            "$ref": "../structure/client_references/equipment.schema"
           }
         }
       }
@@ -533,17 +533,17 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "offset": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "The offset along the pole. 0 Offset will result in a crossarm attached to the pole at one end."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema",
+            "$ref": "../general/bearing.schema",
             "description": "Crossarm bearing is the direction the end of the crossarm points, not the direction of the bolt attachment."
           },
           "associatedBacking": {
@@ -590,17 +590,17 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "offset": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "When attached to a crossarm, the offset along the crossarm."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema"
+            "$ref": "../general/bearing.schema"
           },
           "doubleInsulator": {
             "type": "boolean",
@@ -645,25 +645,25 @@
             "description": "An optional externalId for the item."
           },
           "owner": {
-            "$ref": "../../general/owner.schema"
+            "$ref": "../general/owner.schema"
           },
           "attachmentHeight": {
-            "$ref": "../../general/measurable.schema"
+            "$ref": "../general/measurable.schema"
           },
           "glc": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Ground line circumference of push brace."
           },
           "direction": {
-            "$ref": "../../general/bearing.schema",
+            "$ref": "../general/bearing.schema",
             "description": "Bearing of push brace relative to main pole."
           },
           "distance": {
-            "$ref": "../../general/measurable.schema",
+            "$ref": "../general/measurable.schema",
             "description": "Distance from main pole to base of push brace"
           },
           "clientItem": {
-            "$ref": "../../spidacalc/calc/client_references/pole.schema"
+            "$ref": "../structure/client_references/pole.schema"
           }
         }
       }

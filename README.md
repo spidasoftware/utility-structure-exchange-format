@@ -29,11 +29,11 @@ In general any pull request will be reviewed for following criteria:
 3. Documention provided - Are the relevant readme's and descriptions provided for user clarity?
 4. Testing - has the appropriate test cases been provided to ensure expected behavior.
 
-Tools
------
-
 Validation
 ===========
+
+Command Line
+------------
 
 We include a command line validator to validate against any of our included schemas. To run the command, use the validateJson gradle task
 
@@ -43,11 +43,12 @@ We include a command line validator to validate against any of our included sche
 
 For example, to validate the "one of everything" structure example, from the schema directory you would type:
 
-    gradlew :validateJson -Pschema=/v1/schema/structure/structure.schema -PjsonFile=resources/v1/examples/structure/designs/one_of_everything.json
+    gradlew :validateJson -Pschema=/v1/schema/structure/structure.schema -PjsonFile=resources/v1/examples/designs/one_of_everything.json
 
 The tool uses the included Validator java class.
 
-### External
+External
+---------
 
 If you are in need of actually validating some JSON data against the schema there several options depending on your language.  The one we use in our tests is the excellent library by [fge](https://github.com/fge/json-schema-validator).  It gives very good validation errors and also does all the references for you, so there is no need to load all the linked schema.  You will also notice in our tests we use a namespace of a file system.  This could be any location you put the file, you could even use a "resource:/" uri for referencing in a jar.
 

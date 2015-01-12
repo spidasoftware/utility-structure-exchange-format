@@ -1,6 +1,6 @@
 {
   "description": "Type for an equipment",
-  "id": "#/spidacalc/client/equipment_type.schema",
+  "id": "#/client/equipment_type.schema",
   "type": "object",
   "required": [
     "name",

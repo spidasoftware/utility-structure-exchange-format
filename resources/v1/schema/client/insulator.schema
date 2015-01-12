@@ -1,6 +1,6 @@
 {
   "description": "Engineering properties for an insulator",
-  "id": "#/spidacalc/client/insulator.schema",
+  "id": "#/client/insulator.schema",
   "type": "object",
   "required": [
     "horizontalOffset",
@@ -19,31 +19,31 @@
       "type": "string"
     },
     "horizontalOffset": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "lateralArea": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "poleSideArea": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "shape": {
-      "$ref": "../../spidacalc/client/shape.schema"
+      "$ref": "../client/shape.schema"
     },
     "strength": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "throughHoleDiameter": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "type": {
-      "$ref": "../../spidacalc/client/insulator_type.schema"
+      "$ref": "../client/insulator_type.schema"
     },
     "verticalOffset": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "weight": {
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     }
   },
   "additionalProperties": false

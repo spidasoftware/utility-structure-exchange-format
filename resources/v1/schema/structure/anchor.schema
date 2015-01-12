@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "id": "#/spidacalc/calc/anchor.schema",
+  "id": "#/structure/anchor.schema",
   "description": "A single anchor in a structure.",
   "required": [
     "id",
@@ -23,19 +23,19 @@
     },  
     "distance": {
       "description": "The distance from the outside of the pole to the anchor.",
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "direction": {
       "description": "The bearing of the anchor relative to the pole",
-      "$ref": "../../general/bearing.schema"
+      "$ref": "../general/bearing.schema"
     },
     "owner": {
       "description": "Who owns this anchor.",
-      "$ref": "../../general/owner.schema"
+      "$ref": "../general/owner.schema"
     },
     "height": {
       "description": "Height of the anchor relative to the base of the pole.",
-      "$ref": "../../general/measurable.schema"
+      "$ref": "../general/measurable.schema"
     },
     "supportType": {
       "description": "If the anchor backs a specific line or bisector. Options are a Wire end Point ID or BISECTOR",
