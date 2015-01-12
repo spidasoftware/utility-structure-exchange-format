@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Utility-structure-exchange-format by spidasoftware</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Utility-structure-exchange-format</h1>
+        <p class="header">The schema definitions to enable the exchange of structure definitions among utilities </p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/spidasoftware/utility-structure-exchange-format/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/spidasoftware/utility-structure-exchange-format/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/spidasoftware/utility-structure-exchange-format">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/spidasoftware">spidasoftware</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="utility-structure-exchange-format" class="anchor" href="#utility-structure-exchange-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utility Structure Exchange Format</h1>
+
+<p>This project provides the schema definitions to enable the exchange of structure definitions among different utility companies wishing to share the information in a generic manner. </p>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>Currently the standard is a JSON based schema definition.  JSON was chosen because of its simplicity and ubiquitiy.  It is very readable and can be constructured with nothing more than a text editor.  This allows for the standard to be truely platform agnostic.</p>
+
+<h3>
+<a id="design-philosphy" class="anchor" href="#design-philosphy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Philosphy</h3>
+
+<ol>
+<li>Exchange file content should be human readable.</li>
+<li>The definition files should be as self documenting as possible.</li>
+</ol>
+
+<h3>
+<a id="concepts" class="anchor" href="#concepts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concepts</h3>
+
+<ol>
+<li>If you are not familiar with JSON.  Try this short <a href="http://www.w3schools.com/json/default.asp">tutorial</a>.</li>
+</ol>
+
+<h2>
+<a id="how-to-contribute" class="anchor" href="#how-to-contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Contribute</h2>
+
+<p>We will be using the "fork and pull" workflow, github has excellent <a href="https://help.github.com/articles/using-pull-requests/">documentataion</a> on the this process of doing public collaboration.    We will be using method here.</p>
+
+<p>In general any pull request will be reviewed for following criteria:</p>
+
+<ol>
+<li>Constancy with the rest of the standard - Is the variable naming and structure similar to the rest of the schema?<br>
+</li>
+<li>General usefulness of the feature - Is it of general use to the industry or specific to a particular vendor?</li>
+<li>Documention provided - Are the relevant readme's and descriptions provided for user clarity?</li>
+<li>Testing - has the appropriate test cases been provided to ensure expected behavior.</li>
+</ol>
+
+<h1>
+<a id="validation" class="anchor" href="#validation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Validation</h1>
+
+<h2>
+<a id="command-line" class="anchor" href="#command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Command Line</h2>
+
+<p>We include a command line validator to validate against any of our included schemas. To run the command, use the validateJson gradle task</p>
+
+<pre><code>gradlew :validateJson -Pschema=/path/to/schema -PjsonFile=/path/to/json
+schema - path to schema starting from resources. eg. /v1/schema/spidacalc/calc/structure.schema
+json - json file to be validated.
+</code></pre>
+
+<p>For example, to validate the "one of everything" structure example, from the schema directory you would type:</p>
+
+<pre><code>gradlew :validateJson -Pschema=/v1/schema/structure/structure.schema -PjsonFile=resources/v1/examples/designs/one_of_everything.json
+</code></pre>
+
+<p>The tool uses the included Validator java class.</p>
+
+<h2>
+<a id="external" class="anchor" href="#external" aria-hidden="true"><span class="octicon octicon-link"></span></a>External</h2>
+
+<p>If you are in need of actually validating some JSON data against the schema there several options depending on your language.  The one we use in our tests is the excellent library by <a href="https://github.com/fge/json-schema-validator">fge</a>.  It gives very good validation errors and also does all the references for you, so there is no need to load all the linked schema.  You will also notice in our tests we use a namespace of a file system.  This could be any location you put the file, you could even use a "resource:/" uri for referencing in a jar.</p>
+
+<p>Another lightwight option is the javascript based validator located here <a href="http://geraintluff.github.io/tv4/">http://geraintluff.github.io/tv4/</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
