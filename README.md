@@ -10,17 +10,17 @@ Currently the standard is a JSON based schema definition.  JSON was chosen becau
 
 ### Design Philosophy
 
-1. Exchange file content should be human readable.
+1. The exchange file content should be human readable.
 1. The definition files should be as self documenting as possible.
 
 ### Concepts
 
-1. If you are not familiar with JSON.  Try this short [tutoriall](http://www.w3schools.com/json/default.asp).
+1. If you are not familiar with JSON.  Try this short [tutorial](http://www.w3schools.com/json/default.asp).
 
 How to Contribute
 ------------------
 
-We will be using the "fork and pull" work-flow, github has excellent [documentationn](https://help.github.com/articles/using-pull-requests/) on the this process of doing public collaboration.    We will be using method here.
+We will be using the "fork and pull" work-flow, github has excellent [documentation](https://help.github.com/articles/using-pull-requests/) on the this process of doing public collaboration.    We will be using method here.
 
 In general any pull request will be reviewed for following criteria:
 
@@ -46,6 +46,8 @@ For example, to validate the "one of everything" structure example, from the sch
     gradlew :validateJson -Pschema=/v1/schema/structure/structure.schema -PjsonFile=resources/v1/examples/designs/one_of_everything.json
 
 The tool uses the included _Validator_ Java class.
+
+_Note: gradle is an open-source build tool, it will run on any system by executing the "gradlew" script_
 
 External
 ---------
