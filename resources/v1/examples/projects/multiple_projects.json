@@ -1,7 +1,7 @@
 {"projects": [
     {
     "clientFile": "Demo.client",
-    "schema": "https://raw.github.com/spidasoftware/schema/master/resources/v1/schema/structure/project.schema",
+    "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
     "leads": [{"locations":     [
             {
         "id": "00P1-L100",
@@ -13,8 +13,8 @@
           ]
         },
         "images":         [
-          {"url": "http://spidasoftware.com/images/1900741739155-1.jpg"},
-          {"url": "http://spidasoftware.com/images/1900741739155-2.jpg"}
+          {"url": "http://usmaw.com/images/1900741739155-1.jpg"},
+          {"url": "http://usmaw.com/images/1900741739155-2.jpg"}
         ],
         "label": "00P1-L100"
       },
@@ -69,7 +69,7 @@
   },
     {
     "clientFile": "Demo.client",
-    "schema": "https://raw.github.com/spidasoftware/schema/master/resources/v1/schema/structure/project.schema",
+    "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
     "leads": [{"locations":     [
             {
         "id": "00P2-L100",

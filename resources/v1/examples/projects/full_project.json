@@ -1,5 +1,5 @@
 {
-  "schema": "https://raw.github.com/spidasoftware/schema/master/resources/v1/schema/structure/project.schema",
+  "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
   "version": "0.7",
   "clientFile": "Demo.client",
   "date": "2011-02-21",

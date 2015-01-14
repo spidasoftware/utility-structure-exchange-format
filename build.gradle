@@ -82,7 +82,7 @@ task(validateJson, dependsOn: 'classes', type: JavaExec) {
 		args schema
 		args jFile.absolutePath
 	}
-	main = 'com.spidasoftware.schema.validation.CommandLineValidator'
+	main = 'CommandLineValidator'
 	classpath = sourceSets.main.runtimeClasspath
 	standardInput = System.in
 	standardOutput = System.out

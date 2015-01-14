@@ -1,4 +1,4 @@
-package com.spidasoftware.schema.validation
+package org.usmaw.schema.validation
 
 /**
  * A script to run the json validator from the command line.
@@ -11,7 +11,7 @@ class CommandLineValidator {
 
 	public static void main(String[] args) {
 		if (args.length < 2) {
-			println "Usage: java -cp schema.jar com.spidasoftware.schema.validation.Validator /path/to/schema /path/to/json"
+			println "Usage: java -cp schema.jar Validator /path/to/schema /path/to/json"
 			println "   or"
 			println("Usage: gradlew validateJson -Pschema=/path/to/schema -PjsonFile=/path/to/json")
 			println("  schema - path to schema starting from resources. eg. /v1/schema/spidacalc/calc/structure.schema")

@@ -1,4 +1,4 @@
-package com.spidasoftware.schema.validation
+package org.usmaw.schema.validation
 
 import junit.framework.TestCase
 

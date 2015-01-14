@@ -1,4 +1,4 @@
-package com.spidasoftware.schema.validation
+package org.usmaw.schema.validation
 
 import com.fasterxml.jackson.databind.JsonNode
 
@@ -9,7 +9,7 @@ import com.github.fge.jsonschema.main.JsonSchema
 import com.github.fge.jsonschema.main.JsonSchemaFactory
 import com.github.fge.jsonschema.report.ProcessingReport
 
-import com.spidasoftware.schema.server.*
+import com.usmaw.schema.server.*
 
 import org.apache.commons.io.FilenameUtils
 import org.apache.log4j.Logger

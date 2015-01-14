@@ -1,4 +1,4 @@
-package com.spidasoftware.schema.validation
+package org.usmaw.schema.validation
 
 import com.github.fge.jackson.JsonLoader
 import com.github.fge.jsonschema.cfg.ValidationConfiguration
