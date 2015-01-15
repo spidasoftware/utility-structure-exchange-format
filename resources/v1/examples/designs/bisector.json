@@ -1,7 +1,7 @@
 {
   "anchors": [
     {
-      "clientItem": "10\" - 12\" - 14\" Triple Helix (Class 4) 5/8\" Rod", 
+      "libraryItem": "10\" - 12\" - 14\" Triple Helix (Class 4) 5/8\" Rod",
       "direction": 319, 
       "distance": {
         "unit": "FOOT", 
@@ -33,7 +33,7 @@
         "unit": "FOOT", 
         "value": 13.6
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 19, 
         "coreStrands": 0, 
         "size": "1\" SM"
@@ -55,7 +55,7 @@
       "unit": "FOOT", 
       "value": 16
     }, 
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5", 
       "height": {
         "unit": "FOOT", 
@@ -126,7 +126,7 @@
         "unit": "FOOT", 
         "value": 13.6
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -151,7 +151,7 @@
         "unit": "FOOT", 
         "value": 13.6
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"

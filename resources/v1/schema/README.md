@@ -7,7 +7,7 @@ Calc Integration API
 
 - A data transfer format for moving project, structure, and results information in and out of spidacalc.
 - A REST-like remote control interface for controlling a running instance of calc.
-- A REST interface for querying calc client engineering data.
+- A REST interface for querying calc library engineering data.
 
 ##Data Format
 
@@ -44,9 +44,9 @@ Note that while the file name can be any valid filename (with the .exchange.spid
 
 A user can easily import this file into Calc by selecting it in the normal open dialog or by double-clicking it on their desktop. When the project is subsequently saved, it will be saved as a normal .spida file, not in the exchange format.
 
-One thing to note is that the exchange file format is not entirely portable, because it does not itself contain any client data. So, if the project json includes:
-	"clientFile": "Demo.client"
-then the user must have Demo.client in their clients directory in order to properly open the file.
+One thing to note is that the exchange file format is not entirely portable, because it does not itself contain any library data. So, if the project json includes:
+	"libraryFile": "Demo.library"
+then the user must have Demo.library in their librarys directory in order to properly open the file.
 
 
 ###Supported Structure Fields
@@ -70,9 +70,9 @@ The calc import API supports the following attributes of a structure.
 
 ##Web Services
 
-When calc is running on a client machine, it also starts up a small web server that will only accept requests from the local computer. This is how we intend integrators to work directly with calc. It allows integration from any language on any platform - integrators just need to implement a few web service calls and they can be sending their data in and out of calc very easily.
+When calc is running on a library machine, it also starts up a small web server that will only accept requests from the local computer. This is how we intend integrators to work directly with calc. It allows integration from any language on any platform - integrators just need to implement a few web service calls and they can be sending their data in and out of calc very easily.
 
-Currently, even though it is done in a web service style, this is only available as a client integration. Calc will still be running on the local machine, and it does not require an internet connection -- integrations will work fine in the field! But it also means that you cannot set up a single calc server somewhere to handle all of your analysis.
+Currently, even though it is done in a web service style, this is only available as a library integration. Calc will still be running on the local machine, and it does not require an internet connection -- integrations will work fine in the field! But it also means that you cannot set up a single calc server somewhere to handle all of your analysis.
 
 ##Calc Service
 
@@ -82,11 +82,11 @@ The Calc service is best thought of as a remote control for a running copy of ca
 - Saving the project.
 - Analyzing that project.
 - Generating reports.
-- Running custom scripts that SPIDA has provided to the client.
+- Running custom scripts that SPIDA has provided to the library.
 
-##Client Data Service
+##Library Data Service
 
-The client data service allows querying of our client-specific materials libraries. This should allow data-collection type integrations to show the user the available attachments in their own interface and to select them when building a design to send to calc for analysis.
+The library data service allows querying of our library-specific materials libraries. This should allow data-collection type integrations to show the user the available attachments in their own interface and to select them when building a design to send to calc for analysis.
 
 #Developer Guide
 
@@ -110,11 +110,11 @@ Schema for a calc project. Includes information on GPS positions, street address
 
 ###RPC Interfaces
 
-RPC interfaces are exposed at http://localhost:4560/ while SPIDACalc is running. They allow control over core operations of SPIDAcalc from another programming running locally via basic HTTP POST requests. There is an example script using these methods in examples/scripts/example_RPC_client.coffee.
+RPC interfaces are exposed at http://localhost:4560/ while SPIDACalc is running. They allow control over core operations of SPIDAcalc from another programming running locally via basic HTTP POST requests. There is an example script using these methods in examples/scripts/example_RPC_library.coffee.
 
-####client_data.json
+####library_data.json
 
-Located at http://localhost:4560/clientData/<method name>. This interface provides basic querying methods for what client items are available in a client file.
+Located at http://localhost:4560/libraryData/<method name>. This interface provides basic querying methods for what library items are available in a library file.
 
 ####calc.json
 
@@ -155,7 +155,7 @@ Calc stores UUIDs for all components on the pole. They aren't used as identifier
 - All ID on the structure must conform to the Calc naming conventions. All wires must be named with something starting with "Wire#", all equipment with "Equip#". This will be fixed in a later version to allow generic labeling. Correct ID Form is CASE SENSITIVE. EQUIP#1 is not a correct ID. Equip#1 is.
 - UUIDs must be actual UUIDs and in the canonical form xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx  http://en.wikipedia.org/wiki/Universally_unique_identifier In future versions this will be more generic.
 - parameters sent to RPC interface must be in the order specified in the interface description.
-- Load case names are case-sensitive, to what is in the client file. This can be different from what is shown in calc.
+- Load case names are case-sensitive, to what is in the library file. This can be different from what is shown in calc.
 
 ##Calc Project Structure
 
@@ -178,7 +178,7 @@ Components attaching directly to the pole have structure in common
 - attachHeight: The height above ground level of the highest bolt attaching this to the structure.
 - direction: The bearing of the object relative to the pole.
 - owner: The company who owns the attachment
-- clientItem: The item in our client file describing the material properties of this attachment.
+- libraryItem: The item in our library file describing the material properties of this attachment.
 
 Components at a distance from the pole have structure in common
 
@@ -218,7 +218,7 @@ No, it is not supported by the terms of use of calc or the schema.
 
 ###What reports are available?
 
-The report ID is any report named in your client file, as well as two of the reports available in the calc menu: "Project Summary Report" and "Project Details Report"
+The report ID is any report named in your library file, as well as two of the reports available in the calc menu: "Project Summary Report" and "Project Details Report"
 
 
 ###Questions/Support

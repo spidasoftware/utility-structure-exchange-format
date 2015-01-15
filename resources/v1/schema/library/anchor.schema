@@ -1,6 +1,6 @@
 {
   "description": "Engineering properties for an anchor",
-  "id": "#/client/anchor.schema",
+  "id": "#/library/anchor.schema",
   "type": "object",
   "required": [
     "size",

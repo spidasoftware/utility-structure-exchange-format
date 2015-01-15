@@ -1,6 +1,6 @@
 {
   "description": "Engineering properties for a pole",
-  "id": "#/client/pole.schema",
+  "id": "#/library/pole.schema",
   "type": "object",
   "required": [
     "classOfPole",
@@ -26,13 +26,13 @@
       "$ref": "../general/measurable.schema"
     },
     "materialCategory": {
-      "$ref": "../client/enums/material_category.schema"
+      "$ref": "../library/enums/material_category.schema"
     },
     "modulus": {
       "$ref": "../general/measurable.schema"
     },
     "allowable": {
-      "description":"Either the stress or moment allowable for this client pole.",
+      "description":"Either the stress or moment allowable for this library pole.",
       "$ref": "../general/measurable.schema"
     },
     "poissonRatio": {
@@ -42,7 +42,7 @@
       "$ref": "../general/measurable.schema"
     },
     "shape": {
-      "$ref": "../client/enums/shape.schema"
+      "$ref": "../library/enums/shape.schema"
     },
     "species": {
       "type": "string"

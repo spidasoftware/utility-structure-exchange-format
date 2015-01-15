@@ -6,7 +6,7 @@
       "unit": "FOOT",
       "value": 16
     },
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5",
       "height": {
         "unit": "FOOT",

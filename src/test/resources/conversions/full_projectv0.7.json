@@ -2,7 +2,7 @@
     "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
     "version": "0.7",
     "name": "project-1",
-    "clientFile": "Demo.client",
+    "libraryFile": "Demo.library",
     "date": "2011-02-21",
     "leads": [
         {
@@ -70,7 +70,7 @@
                                         "value": 60
                                     },
                                     "stressRatio": 1,
-                                    "clientItem": {
+                                    "libraryItem": {
                                         "species": "Southern Pine",
                                         "classOfPole": "5",
                                         "height": {
@@ -191,7 +191,7 @@
                                             "value": 0
                                         },
                                         "supportType": "WEP#2",
-                                        "clientItem": "10\" - 10\" Double Helix (Class 4) 1 1/4\" Rod",
+                                        "libraryItem": "10\" - 10\" Double Helix (Class 4) 1 1/4\" Rod",
                                         "guys": [
                                             "Guy#1"
                                         ]
@@ -224,7 +224,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "caca5008-8810-434c-9556-d9274d5779dc"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -249,7 +249,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "b2b94c50-c54d-41ae-8b08-b9c03cd85142"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -274,7 +274,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "1905cc87-4d46-45c4-9814-23ee1695c187"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "C6.6M0500",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -299,7 +299,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "d8f58bd8-b141-4840-8ab9-a8821e93bed9"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -324,7 +324,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "b04f7b14-1ca8-47df-aabe-33e89cb312bb"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -349,7 +349,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "a9707513-6826-4585-acdf-82b4c995ba6d"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "C6.6M0500",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -374,7 +374,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "cf96de80-7b09-449c-a352-c9792def58a5"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "1/0 AAC Triplex",
                                             "coreStrands": 0,
                                             "conductorStrands": 9
@@ -399,7 +399,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "52a5ebf9-563a-4af5-b9ea-46a5891d91f4"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 AAC Triplex",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -427,7 +427,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "1905cc87-4d46-45c4-9814-23ee1695c187"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "1/4\" EHS",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -447,7 +447,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "TRANSFORMER",
                                             "size": "100 kVA Single Phase"
                                         },
@@ -469,7 +469,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "CUTOUT_ARRESTOR",
                                             "size": "1 Cutout Pole Side (Porcelain)"
                                         },
@@ -491,7 +491,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "DRIP_LOOP",
                                             "size": "Secondary"
                                         },
@@ -516,7 +516,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "2e0dacd5-8e8b-4d50-a60e-60e5b3bb9e61"
                                         },
-                                        "clientItem": "13.2 kV Pin Type Insulator (Pole Top)",
+                                        "libraryItem": "13.2 kV Pin Type Insulator (Pole Top)",
                                         "attachmentHeight": {
                                             "unit": "FOOT",
                                             "value": 33.583333333333329
@@ -599,7 +599,7 @@
                                         "value": 60
                                     },
                                     "stressRatio": 1,
-                                    "clientItem": {
+                                    "libraryItem": {
                                         "species": "Southern Pine",
                                         "classOfPole": "4",
                                         "height": {
@@ -694,7 +694,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "660a7ad4-37b1-4ddf-8ac0-a35685e9ab3e"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -719,7 +719,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "91ce282e-49c3-466e-8abd-2057592d957c"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "1/0 AAC Triplex",
                                             "coreStrands": 0,
                                             "conductorStrands": 9
@@ -744,7 +744,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "97614f38-4bc8-495a-8964-195d61290bbf"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "C6.6M0500",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -769,7 +769,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "6799d98c-1e7a-4dbe-aed3-f0ba5506ddd6"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -794,7 +794,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "81facc83-81c3-4a79-ad3b-67f947b18224"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "1/0 AAC Triplex",
                                             "coreStrands": 0,
                                             "conductorStrands": 9
@@ -819,7 +819,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "522fb611-5b71-4914-a0ba-a95255b0791e"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "C6.6M0500",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -844,7 +844,7 @@
                                             "industry": "COMMUNICATION",
                                             "uuid": "bbbdfd61-69e7-4031-8f56-b0a50f306c60"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "TSV0250",
                                             "coreStrands": 0,
                                             "conductorStrands": 4
@@ -873,7 +873,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "TRANSFORMER",
                                             "size": "25 kVA Single Phase"
                                         },
@@ -895,7 +895,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "DRIP_LOOP",
                                             "size": "Secondary"
                                         },
@@ -917,7 +917,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "type": "CUTOUT_ARRESTOR",
                                             "size": "1 Cutout Pole Side (Porcelain)"
                                         },
@@ -942,7 +942,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "5b91bf67-94fd-468e-bcb3-6a12d7bb5bb1"
                                         },
-                                        "clientItem": "13.2 kV Pin Type Insulator (Pole Top)",
+                                        "libraryItem": "13.2 kV Pin Type Insulator (Pole Top)",
                                         "attachmentHeight": {
                                             "unit": "FOOT",
                                             "value": 33.166666666666664
@@ -1031,7 +1031,7 @@
                                         "value": 60
                                     },
                                     "stressRatio": 1,
-                                    "clientItem": {
+                                    "libraryItem": {
                                         "species": "Southern Pine",
                                         "classOfPole": "3",
                                         "height": {
@@ -1108,7 +1108,7 @@
                                             "value": 0
                                         },
                                         "supportType": "WEP#2",
-                                        "clientItem": "10\" - 10\" Double Helix (Class 4) 1 1/4\" Rod",
+                                        "libraryItem": "10\" - 10\" Double Helix (Class 4) 1 1/4\" Rod",
                                         "guys": [
                                             "Guy#1"
                                         ]
@@ -1126,7 +1126,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "ac02851e-ae0c-4ce8-a515-86207c61670f"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -1151,7 +1151,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "3899deb2-df3b-4fdb-94f6-62bf31feb05a"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "4 ACSR",
                                             "coreStrands": 1,
                                             "conductorStrands": 6
@@ -1179,7 +1179,7 @@
                                             "industry": "UTILITY",
                                             "uuid": "098e6dbc-b6df-470a-b7d1-5624f2ba89e2"
                                         },
-                                        "clientItem": {
+                                        "libraryItem": {
                                             "size": "3/8\" EHS",
                                             "coreStrands": 0,
                                             "conductorStrands": 7
@@ -1265,7 +1265,7 @@
                                         "value": 60
                                     },
                                     "stressRatio": 1,
-                                    "clientItem": {
+                                    "libraryItem": {
                                         "species": "Southern Pine",
                                         "classOfPole": "5",
                                         "height": {

@@ -1,5 +1,5 @@
 {
-  "clientFile": "Demo.client",
+  "libraryFile": "Demo.library",
   "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
   "leads": [{"locations": [  {
     "designs": [{"structure": {"pole":     {
@@ -7,7 +7,7 @@
         "unit": "FOOT",
         "value": 16
       },
-      "clientItem":       {
+      "libraryItem":       {
         "classOfPole": "5",
         "height":         {
           "unit": "FOOT",

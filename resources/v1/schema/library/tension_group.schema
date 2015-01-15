@@ -1,12 +1,11 @@
 {
-  "description": "Tension information for a client wire.",
-  "id": "#/client/tension_group.schema",
+  "description": "Tension information for a library wire.",
+  "id": "#/library/tension_group.schema",
   "type": "object",
   "required": [
-    "temperature",
-    "tension",
+    "groups",
     "name",
-    "groups"
+    "temperature"
   ],
   "properties": {
     "groups": {
@@ -32,9 +31,6 @@
       "type": "string"
     },
     "temperature": {
-      "$ref": "../general/measurable.schema"
-    },
-    "tension": {
       "$ref": "../general/measurable.schema"
     }
   },

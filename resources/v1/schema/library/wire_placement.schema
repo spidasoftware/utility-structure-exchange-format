@@ -1,11 +1,11 @@
 {
   "description": "A wire and an offset from the center of the cable.",
   "type": "object",
-  "id": "#/client/wire_placement.schema",
+  "id": "#/library/wire_placement.schema",
   "required": [
     "x",
     "y",
-    "clientWire"
+    "libraryWire"
   ],
   "properties": {
     "x": {
@@ -14,8 +14,8 @@
     "y": {
       "$ref": "../general/measurable.schema"
     },
-    "clientWire": {
-      "$ref": "../client/wire.schema"
+    "libraryWire": {
+      "$ref": "../library/wire.schema"
     }
   },
   "additionalProperties": false

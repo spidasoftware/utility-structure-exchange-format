@@ -285,7 +285,7 @@
           "id",
           "attachmentHeight",
           "owner",
-          "clientItem",
+          "libraryItem",
           "usageGroup"
         ],
         "additionalProperties": false,
@@ -311,7 +311,7 @@
           },
           "tensionGroup": {
             "type": "string",
-            "description": "Which client-wire-defined tension group the wire is in."
+            "description": "Which library-wire-defined tension group the wire is in."
           },
           "midspanHeight": {
             "$ref": "../general/measurable.schema",
@@ -321,8 +321,8 @@
             "type": "number",
             "description": "Additional wire-specific tension adjustment in addition to load case tension multipliers."
           },
-          "clientItem": {
-            "$ref": "../structure/client_references/wire.schema",
+          "libraryItem": {
+            "$ref": "../structure/library_references/wire.schema",
             "description": "The engineering properties of this wire."
           }
         }
@@ -338,7 +338,7 @@
           "id",
           "attachmentHeight",
           "owner",
-          "clientItem",
+          "libraryItem",
           "height"
         ],
         "additionalProperties": false,
@@ -363,8 +363,8 @@
           "height": {
             "$ref": "../general/measurable.schema"
           },
-          "clientItem": {
-            "$ref": "../structure/client_references/wire.schema"
+          "libraryItem": {
+            "$ref": "../structure/library_references/wire.schema"
           }
         }
       }
@@ -379,7 +379,7 @@
           "id",
           "attachmentHeight",
           "owner",
-          "clientItem"
+          "libraryItem"
         ],
         "additionalProperties": false,
         "properties": {
@@ -405,8 +405,8 @@
             "$ref": "../general/measurable.schema",
             "description": "DEPRECATED in Calc 5.1. Use sidewalkBraces instead. If this is a sidewalk guy, length of sidewalk brace."
           },
-          "clientItem": {
-            "$ref": "../structure/client_references/wire.schema"
+          "libraryItem": {
+            "$ref": "../structure/library_references/wire.schema"
           }
         }
       }
@@ -420,7 +420,7 @@
         "required": [
           "attachmentHeight",
           "length",
-          "clientItem",
+          "libraryItem",
           "direction",
           "id",
           "owner",
@@ -449,9 +449,9 @@
           "direction": {
             "$ref": "../general/bearing.schema"
           },
-          "clientItem": {
+          "libraryItem": {
             "type": "string",
-            "description": "The size of the client brace to be used."
+            "description": "The size of the library brace to be used."
           },
           "guys": {
             "type": "array",
@@ -474,7 +474,7 @@
           "id",
           "attachmentHeight",
           "owner",
-          "clientItem",
+          "libraryItem",
           "direction",
           "bottomHeight"
         ],
@@ -501,8 +501,8 @@
           "direction": {
             "$ref": "../general/bearing.schema"
           },
-          "clientItem": {
-            "$ref": "../structure/client_references/equipment.schema"
+          "libraryItem": {
+            "$ref": "../structure/library_references/equipment.schema"
           }
         }
       }
@@ -518,7 +518,7 @@
           "attachmentHeight",
           "owner",
           "associatedBacking",
-          "clientItem",
+          "libraryItem",
           "direction",
           "offset"
         ],
@@ -557,9 +557,9 @@
               "type": "string"
             }
           },
-          "clientItem": {
+          "libraryItem": {
             "type": "string",
-            "description": "ID of the client crossarm with the material properties for this crossarm."
+            "description": "ID of the library crossarm with the material properties for this crossarm."
           }
         }
       }
@@ -575,7 +575,7 @@
           "attachmentHeight",
           "owner",
           "doubleInsulator",
-          "clientItem",
+          "libraryItem",
           "direction",
           "offset"
         ],
@@ -613,7 +613,7 @@
               "type": "string"
             }
           },
-          "clientItem": {
+          "libraryItem": {
             "type": "string"
           }
         }
@@ -629,7 +629,7 @@
           "id",
           "attachmentHeight",
           "owner",
-          "clientItem",
+          "libraryItem",
           "distance",
           "direction",
           "glc"
@@ -662,8 +662,8 @@
             "$ref": "../general/measurable.schema",
             "description": "Distance from main pole to base of push brace"
           },
-          "clientItem": {
-            "$ref": "../structure/client_references/pole.schema"
+          "libraryItem": {
+            "$ref": "../structure/library_references/pole.schema"
           }
         }
       }

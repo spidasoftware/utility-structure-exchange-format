@@ -10,7 +10,7 @@
         "unit": "FOOT", 
         "value": 13.416666666666666
       }, 
-      "clientItem": " 13.2 kV Pin Type Insulator (16\" Bracket Double Insulator)", 
+      "libraryItem": " 13.2 kV Pin Type Insulator (16\" Bracket Double Insulator)",
       "direction": 90, 
       "doubleInsulator": false, 
       "id": "Insulator#1", 
@@ -38,7 +38,7 @@
       "unit": "FOOT", 
       "value": 16
     }, 
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5", 
       "height": {
         "unit": "FOOT", 
@@ -109,7 +109,7 @@
         "unit": "FOOT", 
         "value": 14.166666666666666
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -134,7 +134,7 @@
         "unit": "FOOT", 
         "value": 14.166666666666666
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"

@@ -1,0 +1,15 @@
+{
+  "id": "#/structure/library_references/anchor.schema",
+  "type": "object",
+  "description": "A reference to a library anchor",
+  "required": [
+    "size"
+  ],
+  "properties": {
+    "size": {
+      "description": "The size of the library anchor in the library data.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -9,7 +9,7 @@
     "height",
     "owner",
     "supportType",
-    "clientItem",
+    "libraryItem",
     "guys"
   ],
   "properties": {
@@ -41,8 +41,8 @@
       "description": "If the anchor backs a specific line or bisector. Options are a Wire end Point ID or BISECTOR",
       "type": "string"
     },
-    "clientItem": {
-      "description": "The client anchor with this anchor's material properties",
+    "libraryItem": {
+      "description": "The library anchor with this anchor's material properties",
       "type": "string"
     },
     "guys": {

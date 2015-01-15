@@ -7,7 +7,7 @@
         "unit": "FOOT", 
         "value": 13.833333333333332
       }, 
-      "clientItem": "10 Foot Cross Arm", 
+      "libraryItem": "10 Foot Cross Arm",
       "direction": 0, 
       "id": "CrossArm#1", 
       "insulators": [], 
@@ -35,7 +35,7 @@
       "unit": "FOOT", 
       "value": 16
     }, 
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5", 
       "height": {
         "unit": "FOOT", 

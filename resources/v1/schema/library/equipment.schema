@@ -1,45 +1,49 @@
 {
-  "description": "Engineering properties for an insulator",
-  "id": "#/client/insulator.schema",
+  "description": "Engineering properties for an equipment",
+  "id": "#/library/equipment.schema",
   "type": "object",
   "required": [
-    "horizontalOffset",
+    "distanceToBottom",
+    "distanceToTop",
     "lateralArea",
+    "offset",
     "poleSideArea",
     "shape",
     "size",
-    "strength",
     "throughHoleDiameter",
     "type",
-    "verticalOffset",
+    "valuePerLength",
     "weight"
   ],
   "properties": {
     "size": {
       "type": "string"
     },
-    "horizontalOffset": {
+    "distanceToBottom": {
+      "$ref": "../general/measurable.schema"
+    },
+    "distanceToTop": {
       "$ref": "../general/measurable.schema"
     },
     "lateralArea": {
+      "$ref": "../general/measurable.schema"
+    },
+    "offset": {
       "$ref": "../general/measurable.schema"
     },
     "poleSideArea": {
       "$ref": "../general/measurable.schema"
     },
     "shape": {
-      "$ref": "../client/shape.schema"
-    },
-    "strength": {
-      "$ref": "../general/measurable.schema"
+      "$ref": "../library/enums/shape.schema"
     },
     "throughHoleDiameter": {
       "$ref": "../general/measurable.schema"
     },
     "type": {
-      "$ref": "../client/insulator_type.schema"
+      "$ref": "../library/equipment_type.schema"
     },
-    "verticalOffset": {
+    "valuePerLength": {
       "$ref": "../general/measurable.schema"
     },
     "weight": {

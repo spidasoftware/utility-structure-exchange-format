@@ -3,7 +3,7 @@
   "type": "object",
   "required": [
     "schema",
-    "clientFile",
+    "libraryFile",
     "leads"
   ],
   "additionalProperties": false,
@@ -24,13 +24,13 @@
       "type": "string",
       "description": "This is the release tag and schema jar version number. Example: 0.5.1"
     },
-    "clientFile": {
+    "libraryFile": {
       "type": "string",
-      "description": "Filename of the client file with extension. (ex, Demo.client)"
+      "description": "Filename of the library file with extension. (ex, Demo.library)"
     },
-    "clientFileVersion": {
+    "libraryFileVersion": {
        "type":"string",
-       "description": "version identifier for a specific client file"
+       "description": "version identifier for a specific library file"
     },
     "date": {
       "type": "string",

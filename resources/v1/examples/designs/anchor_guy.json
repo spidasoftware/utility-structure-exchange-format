@@ -1,7 +1,7 @@
 {
   "anchors": [
     {
-      "clientItem": {
+      "libraryItem": {
         "size": "10\" - 12\" Double Helix (Class 4) 1 1/4\" Rod"
       },
       "direction": 81,
@@ -35,7 +35,7 @@
         "unit": "FOOT",
         "value": 11.916666666666666
       },
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 19,
         "coreStrands": 0,
         "size": "1\" SM"
@@ -58,7 +58,7 @@
       "unit": "FOOT",
       "value": 16
     },
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5",
       "height": {
         "unit": "FOOT",

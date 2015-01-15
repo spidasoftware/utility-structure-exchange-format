@@ -1,6 +1,6 @@
 {"projects": [
     {
-    "clientFile": "Demo.client",
+    "libraryFile": "Demo.library",
     "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
     "leads": [{"locations":     [
             {
@@ -68,7 +68,7 @@
     "label": "project-1"
   },
     {
-    "clientFile": "Demo.client",
+    "libraryFile": "Demo.library",
     "schema": "https://raw.github.com/usmaw/schema/master/resources/v1/schema/structure/project.schema",
     "leads": [{"locations":     [
             {

@@ -7,7 +7,7 @@ import com.github.fge.jsonschema.uri.*
 import net.sf.json.JSONObject
 import org.apache.log4j.Logger;
 
-class CalcSchemaTest extends GroovyTestCase { 
+class StructureSchemaTest extends GroovyTestCase {
 
 	def report
 	def log = Logger.getLogger(this.class)
@@ -22,11 +22,11 @@ class CalcSchemaTest extends GroovyTestCase {
 		assertTrue "this instance should be valid against the schema", report.isSuccess()
 	}
 
-	void testClientPoleObject(){
+	void testlibraryPoleObject(){
 		def instance = '{"species":"pine", "height":{"unit":"FOOT", "value":100}, "classOfPole":"h2"}'				
-		def schema = factory.getJsonSchema("v1/schema/structure/client_references/pole.schema")
+		def schema = factory.getJsonSchema("v1/schema/structure/library_references/pole.schema")
 		report = schema.validate(JsonLoader.fromString(instance))
-		report.each{ log.info "testClientPoleObject validation report "+it.toString() }
+		report.each{ log.info "testlibraryPoleObject validation report "+it.toString() }
 		assertTrue "this instance should be valid against the schema", report.isSuccess()		
 	}
 

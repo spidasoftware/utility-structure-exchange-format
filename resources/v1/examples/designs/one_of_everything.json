@@ -1,7 +1,7 @@
 {
   "anchors": [
     {
-      "clientItem": "10\" - 12\" - 14\" Triple Helix (Class 4) 3/4\" Rod", 
+      "libraryItem": "10\" - 12\" - 14\" Triple Helix (Class 4) 3/4\" Rod",
       "direction": 0, 
       "distance": {
         "unit": "FOOT", 
@@ -25,7 +25,7 @@
       "externalId": "d87aa235-a100-4d8e-a0ec-5f8bbff4a365"
     }, 
     {
-      "clientItem": "10\" - 12\" Double Helix (Class 4) 1 1/4\" Rod", 
+      "libraryItem": "10\" - 12\" Double Helix (Class 4) 1 1/4\" Rod",
       "direction": 312, 
       "distance": {
         "unit": "FOOT", 
@@ -55,7 +55,7 @@
         "unit": "FOOT", 
         "value": 13.583333333333332
       }, 
-      "clientItem": "10 Foot Cross Arm", 
+      "libraryItem": "10 Foot Cross Arm",
       "direction": 118, 
       "id": "CrossArm#1", 
       "insulators": [
@@ -268,7 +268,7 @@
         "unit": "FOOT", 
         "value": 7.316272965879265
       }, 
-      "clientItem": {
+      "libraryItem": {
         "size": "3-Unit Rack 300 Kvar (Switched)", 
         "type": "CAPACITOR"
       }, 
@@ -290,7 +290,7 @@
         "unit": "FOOT", 
         "value": 14.833333333333332
       }, 
-      "clientItem": {
+      "libraryItem": {
         "size": "9-Unit Rack 1800 Kvar (Switched)", 
         "type": "CAPACITOR"
       }, 
@@ -310,7 +310,7 @@
         "unit": "FOOT", 
         "value": 8.956692913385826
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1/2\" EHS"
@@ -336,7 +336,7 @@
         "unit": "FOOT", 
         "value": 20.341207349081365
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1/2\" EHS"
@@ -362,7 +362,7 @@
         "unit": "FOOT", 
         "value": 24
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 19, 
         "coreStrands": 0, 
         "size": "1\" CG"
@@ -382,7 +382,7 @@
         "unit": "FOOT", 
         "value": 10.416666666666666
       }, 
-      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)", 
+      "libraryItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
       "direction": 118, 
       "doubleInsulator": false, 
       "id": "Insulator#2", 
@@ -406,7 +406,7 @@
         "unit": "FOOT", 
         "value": 13.583333333333332
       }, 
-      "clientItem": "13.2 kV Pin Type Insulator (Crossarm)", 
+      "libraryItem": "13.2 kV Pin Type Insulator (Crossarm)",
       "direction": 28, 
       "doubleInsulator": false, 
       "id": "Insulator#1", 
@@ -438,7 +438,7 @@
         "value": 15.41994750656168
       }, 
       "id": "NotePoint#1", 
-      "note": "There are no notes in this client file.", 
+      "note": "There are no notes in this library file.",
       "externalId": "48d6a270-d331-4a41-8ec0-c82c6998af83"
     }
   ], 
@@ -506,7 +506,7 @@
       "unit": "FOOT", 
       "value": 16
     }, 
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "5", 
       "height": {
         "unit": "FOOT", 
@@ -536,7 +536,7 @@
         "unit": "FOOT", 
         "value": 8.923884514435697
       }, 
-      "clientItem": {
+      "libraryItem": {
         "classOfPole": "1", 
         "height": {
           "unit": "FOOT", 
@@ -568,7 +568,7 @@
         "unit": "FOOT", 
         "value": 13.6
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 19, 
         "coreStrands": 0, 
         "size": "1\" EHS"
@@ -707,7 +707,7 @@
         "unit": "FOOT", 
         "value": 14.166666666666666
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -732,7 +732,7 @@
         "unit": "FOOT", 
         "value": 11.583333333333334
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -757,7 +757,7 @@
         "unit": "FOOT", 
         "value": 11.583333333333334
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -782,7 +782,7 @@
         "unit": "FOOT", 
         "value": 10.75
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -807,7 +807,7 @@
         "unit": "FOOT", 
         "value": 14.166666666666666
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -832,7 +832,7 @@
         "unit": "FOOT", 
         "value": 11.583333333333334
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -857,7 +857,7 @@
         "unit": "FOOT", 
         "value": 11.583333333333334
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"
@@ -882,7 +882,7 @@
         "unit": "FOOT", 
         "value": 10.75
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1 AAC"

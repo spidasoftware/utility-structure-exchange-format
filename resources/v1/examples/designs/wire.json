@@ -13,7 +13,7 @@
       "unit": "FOOT", 
       "value": 38.5
     }, 
-    "clientItem": {
+    "libraryItem": {
       "classOfPole": "4", 
       "height": {
         "unit": "FOOT", 
@@ -84,7 +84,7 @@
         "unit": "FOOT", 
         "value": 27.5
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1/0 AAC-COV"
@@ -109,7 +109,7 @@
         "unit": "FOOT", 
         "value": 27.5
       }, 
-      "clientItem": {
+      "libraryItem": {
         "conductorStrands": 7, 
         "coreStrands": 0, 
         "size": "1/0 AAC-COV"

@@ -3,7 +3,7 @@
   "description": "The properties for a pole in a structure.",
   "type": "object",
   "required": [
-    "clientItem",
+    "libraryItem",
     "owner"
   ],
   "properties": {
@@ -35,9 +35,9 @@
       "description": "Defaults to 1. Any additional strength reduction in this specific pole beyond that specified by load cases.",
       "type": "number"
     },
-    "clientItem": {
-      "description": "The client pole used to specify material properties.",
-      "$ref": "../structure/client_references/pole.schema"
+    "libraryItem": {
+      "description": "The library pole used to specify material properties.",
+      "$ref": "../structure/library_references/pole.schema"
     },
     "owner": {
       "description": "Company who owns the pole.",

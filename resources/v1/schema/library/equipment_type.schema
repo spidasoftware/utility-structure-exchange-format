@@ -1,6 +1,6 @@
 {
   "description": "Type for an equipment",
-  "id": "#/client/equipment_type.schema",
+  "id": "#/library/equipment_type.schema",
   "type": "object",
   "required": [
     "name",

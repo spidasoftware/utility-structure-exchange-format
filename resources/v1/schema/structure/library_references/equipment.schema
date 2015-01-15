@@ -1,7 +1,7 @@
 {
-      "id": "#/structure/client_references/equipment.schema",
+      "id": "#/structure/library_references/equipment.schema",
   "type": "object",
-  "description": "A reference to a client equipment",
+  "description": "A reference to a library equipment",
   "required": [
     "type",
     "size"
@@ -12,7 +12,7 @@
       "type": "string"
     },
     "size": {
-      "description": "The client data identifier for this equipment.",
+      "description": "The library data identifier for this equipment.",
       "type": "string"
     }
   },

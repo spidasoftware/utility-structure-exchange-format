@@ -1,5 +1,5 @@
 {
-  "calculation": "INITIAL", 
+  "calculation": "DYNAMIC",
   "conductorStrands": 7, 
   "coreStrands": 0, 
   "crossArea": {
@@ -39,7 +39,7 @@
           }
         }
       ], 
-      "id": "Full",
+      "name": "Full",
       "temperature": {
         "unit": "FAHRENHEIT", 
         "value": 60
@@ -58,7 +58,7 @@
           }
         }
       ], 
-      "id": "Slack",
+      "name": "Slack",
       "temperature": {
         "unit": "FAHRENHEIT", 
         "value": 60

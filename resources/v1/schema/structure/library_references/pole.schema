@@ -1,7 +1,7 @@
 {
-  "id": "#/structure/client_references/pole.schema",
+  "id": "#/structure/library_references/pole.schema",
   "type": "object",
-  "description": "A reference to a client pole",
+  "description": "A reference to a library pole",
   "required": [
     "height",
     "species",

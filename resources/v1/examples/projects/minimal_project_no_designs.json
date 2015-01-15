@@ -1,5 +1,5 @@
 {
-  "clientFile": "Demo.client",
+  "libraryFile": "Demo.library",
   "leads": [{"locations":   [
         {
       "geographicCoordinate":       {

@@ -83,7 +83,7 @@
         "unit": "INCH",
         "value": 0
       },
-      "clientWire": {
+      "libraryWire": {
         "size": "Comm number 1",
         "expansionCoefficient": {
           "unit": "PER_FAHRENHEIT",
@@ -169,7 +169,7 @@
         "unit": "INCH",
         "value": -0.25
       },
-      "clientWire": {
+      "libraryWire": {
         "size": "Comm number 2",
         "expansionCoefficient": {
           "unit": "PER_FAHRENHEIT",

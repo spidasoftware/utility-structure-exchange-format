@@ -1,6 +1,6 @@
 {
   "description": "A bundle of communication wires with a messenger.",
-  "id": "#/client/bundle.schema",
+  "id": "#/library/bundle.schema",
   "type": "object",
   "required": [
     "numberOfConductors",
@@ -25,17 +25,17 @@
       "type": "integer"
     },
     "messenger": {
-      "$ref": "../client/wire_placement.schema"
+      "$ref": "../library/wire_placement.schema"
     },
     "cables": {
       "type": "array",
       "description": "The non-load-bearing communication cables.",
       "items": {
-        "$ref": "../client/wire_placement.schema"
+        "$ref": "../library/wire_placement.schema"
       }
     },
     "calculation": {
-      "$ref": "../client/calculation.schema"
+      "$ref": "../library/calculation.schema"
     },
     "conductorStrands": {
       "type": "integer"
@@ -66,7 +66,7 @@
     },
     "tensionGroups": {
       "items": {
-        "$ref": "../client/tension_group.schema"
+        "$ref": "../library/tension_group.schema"
       },
       "type": "array"
     },

@@ -37,7 +37,7 @@
             "type": "array"
         }, 
         "framingPlan": {
-            "$ref": "../client/framing_plan.schema"
+            "$ref": "../library/framing_plan.schema"
         }, 
         "geographicCoordinate": {
             "$ref": "../general/geometry.schema"

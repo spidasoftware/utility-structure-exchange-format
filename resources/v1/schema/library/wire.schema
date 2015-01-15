@@ -1,6 +1,6 @@
 {
   "description": "Engineering properties for a wire",
-  "id": "#/client/wire.schema",
+  "id": "#/library/wire.schema",
   "type": "object",
   "required": [
     "calculation",
@@ -35,7 +35,7 @@
       "type": "string"
     },
     "calculation": {
-      "$ref": "../client/calculation.schema"
+      "$ref": "../library/enums/calculation.schema"
     },
     "crossArea": {
       "$ref": "../general/measurable.schema"
@@ -58,7 +58,7 @@
     "tensionGroups": {
       "type": "array",
       "items": {
-        "$ref": "../client/tension_group.schema"
+        "$ref": "../library/tension_group.schema"
       }
     },
     "usageGroups": {
