@@ -1,7 +1,8 @@
 Utility Structure Exchange Format
 ===================================
 
-https://travis-ci.org/usmaw/utility-structure-exchange-format.svg?branch=master
+![travis](https://travis-ci.org/usmaw/utility-structure-exchange-format.svg?branch=master)
+
 
 This project provides the schema definitions to enable the exchange of structure definitions among different utility companies wishing to share the information in a generic manner. 
 
