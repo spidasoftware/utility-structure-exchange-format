@@ -1,6 +1,8 @@
 Utility Structure Exchange Format
 ===================================
 
+https://travis-ci.org/usmaw/utility-structure-exchange-format.svg?branch=master
+
 This project provides the schema definitions to enable the exchange of structure definitions among different utility companies wishing to share the information in a generic manner. 
 
 Overview
@@ -16,6 +18,7 @@ Currently the standard is a JSON based schema definition.  JSON was chosen becau
 ### Concepts
 
 1. If you are not familiar with JSON.  Try this short [tutorial](http://www.w3schools.com/json/default.asp).
+2. The "library" items are the enginering library definitions that would specify the non-design values. For example, it would define how much a piece of equipment weighs but not where it is attached on the pole
 
 How to Contribute
 ------------------
