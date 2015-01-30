@@ -67,4 +67,6 @@ Entity Relationship Diagrams
 
 <img src="schema-structure-erd.svg">Structure</img>
 
+<img src="schema-library-erd.svg">Library</img>
+
 
