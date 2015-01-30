@@ -60,3 +60,11 @@ If you are in need of actually validating some JSON data against the schema ther
 
 Another lightweight option is the javascript based validator located here http://geraintluff.github.io/tv4/
 
+Entity Relationship Diagrams
+---------
+
+<img src="schema-project-erd.svg">Project</img>
+
+<img src="schema-structure-erd.svg">Structure</img>
+
+
