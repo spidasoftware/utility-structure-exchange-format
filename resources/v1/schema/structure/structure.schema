@@ -7,6 +7,10 @@
   ],
   "additionalProperties": false,
   "properties": {
+  	"library": {
+  		"$ref": "../library/library.schema"
+  		"description": "Optional listing of engineering data for items used in structure."
+  	},
     "pole": {
       "$ref": "../structure/pole.schema",
       "description": "The main pole being analyzed."
