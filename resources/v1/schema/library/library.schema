@@ -1,0 +1,60 @@
+{
+  "description": "A library of engineering information for a structure or project",
+  "id": "#/library/library.schema",
+  "type": "object",
+  "required": [
+  ],
+  "properties": {
+    "anchors": {
+      "type": "array",
+      "description": "All anchors.",
+      "items": {
+      	"$ref": "../library/anchor.schema"
+      }
+    },
+		"crossarms": {
+      "type": "array",
+      "description": "All crossarms.",
+      "items": {
+      	"$ref": "../library/crossarm.schema"
+      }
+    },
+    "equipments": {
+      "type": "array",
+      "description": "All equipment.",
+      "items": {
+      	"$ref": "../library/equipment.schema"
+      }
+    },
+    "insulators": {
+      "type": "array",
+      "description": "All insulators.",
+      "items": {
+      	"$ref": "../library/insulator.schema"
+      }
+    },
+    "poles": {
+      "type": "array",
+      "description": "All poles.",
+      "items": {
+      	"$ref": "../library/pole.schema"
+      }
+    },
+		"sidewalkBraces": {
+      "type": "array",
+      "description": "All sidewalk braces.",
+      "items": {
+      	"$ref": "../library/sidewalk_brace.schema"
+      }
+    },
+  	"wires": {
+      "type": "array",
+      "description": "All wires.",
+      "items": {
+      	"$ref": "../library/wire.schema"
+      }
+    }
+    
+  },
+  "additionalProperties": false
+}
