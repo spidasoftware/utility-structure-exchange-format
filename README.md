@@ -63,10 +63,16 @@ Another lightweight option is the javascript based validator located here http:/
 Entity Relationship Diagrams
 ---------
 
-<img src="project-erd.png?raw=true">Project</img>
+## Project
 
-<img src="structure-erd.png?raw=true">Structure</img>
+<img src="project-erd.png?raw=true"></img>
 
-<img src="library-erd.png?raw=true">Library</img>
+## Structure
+
+<img src="structure-erd.png?raw=true"></img>
+
+## Library
+
+<img src="library-erd.png?raw=true"></img>
 
 
